@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main()
+{
+    /* QUESTÃO 1
+    float mb, kb, b, gb;
+    printf("Digite o valor em MB que voce deseja transformar:");
+    scanf("%f", &mb);
+    kb = mb * 1024;
+    b = kb * 1024;
+    gb = (mb / 1024);
+    printf("\n O numero em MB e: %1.f", mb);
+    printf("\n O numero em KB e: %1.f", kb);
+    printf("\n O numero em  B e: %1.f", b);
+    printf("\n O numero em gb e: %1.f", gb);
+    return 0;
+    
+    */
+
+  
+    /*  Questão 2
+  
+    int h, m, s1, s2, sT;
+    printf("Digite apenas as horas da receita:");
+    scanf("%d", &h);
+    printf("Digite agora apenas os minutos restantes da receita:");
+    scanf("%d", &m);
+    s1 = h * 3600;
+    s2 = m * 60;
+    sT = s1 + s2;
+    printf("\n O tempo da receita em segundos é: %d", sT);
+    return 0;
+
+*/
+
+
+/* Questão 3
+     float nota1, nota2, nota3, peso1, peso2, peso3, mediaPonderada;
+     printf("Digite a nota 1:");
+     scanf("%f", &nota1);
+     printf("\nDigite o peso da nota 1:");
+     scanf("%f", &peso1);
+     printf("\nDigite a nota 2:");
+     scanf("%f", &nota2);
+     printf("\nDigite o peso da nota 2:");
+     scanf("%f", &peso2);
+     printf("\nDigite a nota 3:");
+     scanf("%f", &nota3);
+     printf("\nDigite o peso da nota 3:");
+     scanf("%f", &peso3);
+
+     mediaPonderada = ((nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)) / (peso1 + peso2 + peso3);
+
+     printf("\n A media ponderada dessas notas é: %f", mediaPonderada);
+     return 0;
+
+
+*/
+/*  Questão 4
+    float num1, num2;
+    printf("Digite o primeiro numero:");
+    scanf("%f", &num1);
+    printf("Digite o segundo numero:");
+    scanf("%f", &num2);
+    printf("A diferenca entre esses dois numeros é: %f", num1 - num2);
+    return 0;
+
+*/
+
+
+}
+
