@@ -70,6 +70,114 @@ int main()
 
 */
 
+/* Questão 5
+float n1,n2, n3;
+printf("Insira o peso 1:");
+scanf("%f", &n1);
+printf("Insira o peso 2:");
+scanf("%f", &n2);
+printf("Insira o peso 3:");
+scanf("%f", &n3);
+
+if(n1 > n2 && n1 > n3){
+    printf("O maior numero e: %f", n1);
+    if(n2 > n3){
+        printf("O menor numero e: %f", n3);
+    }
+    else{
+        printf("O menor numero e: %f", n2);
+    }
+}
+if(n2 > n1 && n2 > n3){
+    printf("O maior numero e: %f", n2);
+    if(n1 > n3){
+        printf("O menor numero e: %f", n3);
+    }
+    else{
+        printf("O menor numero e: %f", n1);
+    }
+}
+if(n3 > n1 && n3 > n1){
+    printf("O maior numero e: %f", n3);
+    if(n1 > n2){
+        printf("O menor numero e: %f", n2);
+    }
+    else{
+        printf("O menor numero e: %f", n1);
+    }
+}
+
+return 0;
+
+*/
+
+/* Questão 6
+int datanasc, datahoje, idade, idadeR, niver;
+
+printf("Qual seu ano de nascimento?");
+scanf("%i", &datanasc);
+printf("Em que ano voce esta hoje?");
+scanf("%i", &datahoje);
+printf("Você ja fez aniversario esse ano (Digite 1 para SIM ou 2 para NAO)");
+scanf("%i", &niver);
+
+if(niver == 1){
+    idade = datahoje - datanasc;
+    printf("Sua idade e: %i", idade);
+} else if(niver == 2){
+    idade = datahoje - datanasc;
+    idadeR = idade - 1;
+    printf("Sua idade e: %i", idadeR);   
+} else{
+    printf("Digite o NUMERO 1 para SIM e o NUMERO 2 para NAO!");
+}
+return 0;
+*/
+
+
+ int hdia, ndia;
+  int hmes, nmes;
+  int hano, nano;
+  int dia, mes, ano;
+  int diferenca;
+  
+  hdia = 0;  /* dia de hoje                                               */ 
+  ndia = 0;  /* dia de nascimento                                         */
+  hmes = 0;  /* mes de hoje                                               */ 
+  nmes = 0;  /* mes de nascimento                                         */
+  hano = 0;  /* ano de hoje                                               */
+  nano = 0;  /* ano de nascimento                                         */
+
+  
+/*  ENTRADA DE DADOS                                                      */ 
+  printf("%s","*** Calculadora de Tempo de Vida ANSI C\n");
+  printf("%s","Por favor informe a data de ""hoje?\n");
+  printf("%s","[dd mm aaaa]: ");
+  scanf(" %d%d%d", &hdia, &hmes, &hano);
+  printf("              %2d/%2d/%3d\n\n", hdia, hmes, hano);
+  
+  printf("%s","Por favor informe a data de ""nascimento?\n");
+  printf("%s","[dd mm aaaa]: ");
+  scanf(" %d%d%d", &ndia, &nmes, &nano);
+  printf("              %2d/%2d/%3d\n\n", ndia, nmes, nano);
+
+/* PROCESSAMENTO DE  DADOS                                                */
+  diferenca =   365*hano + 30*hmes + hdia
+              - 365*nano - 30*nmes - ndia;
+  
+  ano = diferenca/365;
+  diferenca = diferenca%365;
+  
+  mes = diferenca/30;
+  diferenca = diferenca%30;
+  
+  dia = diferenca;
+  
+/* RESULTADO                                                              */
+  printf("%s %d %s %d %s %d %s", /* ---são as máscaras de saída do printf */
+          "Tem de vida:", ano, "ano(s)", mes, "mes(es)", dia, "dia(s).\n");
+  return 0;
+
 
 }
 
